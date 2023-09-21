@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>제목</title>
+    <link rel="shortcut icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAMAAACahl6sAAAAb1BMVEX///8dyAD0/PNh2U38/vxM0zXt++t33mak6ZnQ9MouzBT7/vr4/feG4nckygjU9M6W5YhD0Svi+N617azF8b1T1T1k2VCM431a10XB8LmB4HFq21e977Xr+ujM88aa5o2q6p+37q7d99g5zyFx3F+9hO53AAAC60lEQVR4nO3df1eiQBjF8QFRFBHU0LXMyh/v/zWmtu4aMTBDdeY+z7nf/2n5pK33VDbGMMYYY4wxxhhjjLGfKMnj8E2/q8jL8dN2ELx1Oq9G32FU26yIMMpW496U3SwLffv3FYNJP8dyHfrW6y2eez0ecI6zpMdjMv0T+q6b2uy8IS9QXx+3ilfvByQNfc/NDX0fkuUx9C03Vzx4QvYorx/1njwh89A3bGsQ+0Eg/8+6NPR7fU9Av9YJwYsQtAhBixC0CEGLELQIQYsQtAhBixC0CEGLELQIaavI7PW4xun75r8CWVUTW9XKcs2stF1SzoJB2r4z/mh5TMb2S8aQkKnl8ysOYpZDJRDz0PjkEgjJGz+GQIg5LJRAzFvDK4NISLxVAjHl15/Wy4SY1y9PLqGQ0UAJxLzUn1xSIUn9VyikQsxuowRSn8FyIbUZLBdSm8GCIWZ//+SSDPk0gyVDPs1g0ZD7GSwbEp+UQO5msHDI/xksHTK6/aa9dMi/GSwecpvB4iG3GSwf8ncGK4B8zGAFkI8ZrAFyncEqIJcZrAJymcE6IOcZrAQSn5RATFkJg+SW9zsnLe+DhoQc9l7/Hi5ksjoogWRprgTi/dZHVEg0XCqBRDPPv9QAC8laXjNEQXzffY4LKeaJDkh09PrTBsCQaOuzxpAhbatdFCRaeCwVaEjksVSwIZn7UsGGeCwVcIj7UkGHOC8VdIjzUoGHuC4VeIjrUsGHOC4VARC3pSIA4rZUJECclooIiMtSEQFxWSoyIA5LRQgke1QC6V4qUiCdS0UKpHOpiIFE6/alIgfSsVTkQDqWiiBI+1KRBGn96U9ISGLJBjkvFdslSUDI8ZTaWtveCr2xXpLa3qf8+5AQEYIWIWgRghYhaBGCFiFoEYIWIWgRghYhaBGCFiFoeULUHG2j57AhNcc/qTmQS80RaWoOrdNzjKCagx31HLWp5/BTPcfRGjUHBF/TcWQzY4wxxhhjjDHGGLv2DggGddXM+w+FAAAAAElFTkSuQmCC" type="image/x-icon">
+    <style>
+        /* 주석: 브라우저가 해석하지 않고, 개발자가 소통하기위해(메모) 사용 */
+        *{margin: 0;padding: 0;}
+        .흥부{background-color: green; padding: 20px;}
+        /* 띄워쓰기: 자손 
+        >: 직계자식만 */
+
+        /* 자식요소는 부모요소의 넓이를 따라감
+        부모요소는 자식요소의 높이를 따라감 */
+        .흥부 .일자{background-color: pink; height: 50px; width: 200px;
+        margin: auto;/* 가운데배치시킴 */
+        margin-bottom: 20px;
+        }
+        .흥부>.일자{}
+        .흥부>.이자{width: 300px;height: 300px;
+        overflow: hidden;/* 나의 영역에서 자식이 벗어났을때 안보이게 함 */
+        margin: auto;
+        }
+        /* 태그를 부를때는 앞에 .를 사용하지 않는다 */
+        .흥부>.이자 img{}
+    </style>
+</head>
+<body>
+<!-- <시작></끝>     -->
+<div class="흥부">
+    <div class="일자">일자</div>
+    <div class="이자">
+        <img src="https://img.wowtv.co.kr/wowtv_news/dnrs/20230627/2023062708494902468d3244b4fed182172185139.jpg" alt="그림">
+    </div>
+</div>
+</body>
+</html>
