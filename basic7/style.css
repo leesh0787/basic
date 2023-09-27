@@ -1,0 +1,100 @@
+@charset "UTF-8";
+
+.어떤마을 .약::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.어떤마을 {
+    background-color: #F0FC93;
+    padding: 20px;
+}
+
+.어떤마을 .놀부 {
+    background-color: green;
+    padding: 20px;
+}
+
+.어떤마을 .놀부 .자식 {
+    background-color: #BDF1F6;
+    float: left;
+}
+
+.어떤마을 .놀부 .자식.하나 {}
+
+.어떤마을 .놀부 .자식.둘 {}
+
+.어떤마을 .놀부 .자식.셋 {}
+
+.어떤마을 .놀부 .자식.넷 {}
+
+.어떤마을 .놀부 .효자 {
+    clear: both;
+}
+
+.어떤마을 .흥부 {
+    background-color: #FF6969;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.어떤마을 .흥부 .자식 {
+    background-color: #79AC78;
+    float: left;
+}
+
+/*- ::after,::before는 인라인요소 
+(넓이와 높이값을 인식하지못함 , 글자와 같은 성질) 
+-clear: both 는 부모가 공간을 인식하지 못할때 인식 할 수 있도록 함 
+-단 , clear:both 는 블럭요소일때만 실행됨
+따라서 clear:both 를 적용하려면 display: block 사용하도록하자 
+-before는 항상 맨 앞 
+-after는 항상 맨 뒤
+-before , after 는 content가 있어야 존재한다*/
+
+.어떤마을 .흥부:hover {
+    color: blue;
+}
+
+.어떤마을 .흥부::after {
+    content: "";
+    display: block;
+    clear: both;
+    
+}
+
+.어떤마을 .흥부::before {
+    content: "";
+}
+
+.어떤마을 .흥부 .자식.하나 {}
+
+.어떤마을 .흥부 .자식.둘 {}
+
+.어떤마을 .흥부 .자식.셋 {}
+
+.어떤마을 .흥부 .자식.넷 {}
+
+.칠부 {
+    background-color: #9D76C1;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+.칠부 .자식 {
+    background-color: #419197;
+    float: left;
+
+.칠부 .자식.하나 {}
+
+.칠부 .자식.둘 {}
+
+.칠부 .자식.셋 {}
+
+.칠부 .자식.넷 {}

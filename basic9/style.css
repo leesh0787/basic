@@ -1,0 +1,119 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.치료::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.전체 {
+    width: 1000px;
+    background-color: #EF9595;
+    margin: auto;
+}
+
+.전체 .첫번째 {
+    background-color: #64CCC5;
+    padding: 20px;
+}
+
+.전체 .첫번째 .자식 {
+    float: left;
+    background-color: lavender;
+    height: 200px;
+    width: 24.25%;
+    margin-right: 1%;
+}
+
+.전체 .첫번째 .자식.자식1 {
+    position: relative;
+    
+}
+.전체 .첫번째 .자식.자식1 .상 {
+    background-color: #EC53B0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://newsimg.sedaily.com/2023/07/04/29S01GJ0YH_4.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.전체 .첫번째 .자식.자식1 .하 {
+    background-color: #4D2DB7;
+    width: 100%;
+    height: 100%;
+    position: absolute; left: 0; top: 0;
+    background-image: url(https://t1.daumcdn.net/news/202304/07/tvreport/20230407090407396akmz.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 3s;
+}
+.전체 .첫번째 .자식.자식1 .하:hover{
+opacity: 0;
+}
+.전체 .첫번째 .자식.자식2 {
+    position: relative;
+    background-image: url(https://img9.yna.co.kr/photo/cms/2023/07/06/62/PCM20230706000062005_P2.jpg);
+    overflow: hidden;
+}
+
+/* position: absolute; 자식의 공간만큼 넓이를 차지 // 넓이를 설정해야한다*/
+
+.전체 .첫번째 .자식.자식2 .상 {
+    background-color: red;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 100%; top: 0;
+    background-image: url(https://image.ytn.co.kr/general/jpg/2023/0620/202306201445147008_h.jpg);
+    background-size: cover;
+    background-position: center;
+    transition: 3s;
+    
+}
+
+.전체 .첫번째 .자식.자식2:hover .상{
+    left: 0;
+}
+
+.전체 .첫번째 .자식.자식3 {
+    position: relative;
+    overflow: hidden;
+}
+.전체 .첫번째 .자식.자식3 .yt{
+    width: 100%;
+    position: absolute;
+    left: 50%; top: 50%;
+    /* transform: translate(x값,y값);//%의 기준이 자기자신 */
+    transform: translate(-50%,-50%) scale(1.6);
+    
+}
+
+.전체 .첫번째 .자식.자식4 {
+    margin-right: 0;
+}
+/* //첫번째 */
+.전체 .두번째 {
+    background-color: #D2DE32;
+    padding: 20px;
+}
+.전체 .두번째 .자식 {
+    background-color: #DAC0A3;
+    float: left;
+    height: 200px;
+    width: 24.25%;
+    margin-right: 1%;
+}
+.전체 .두번째 .자식.자식1 {}
+
+.전체 .두번째 .자식.자식2 {}
+
+.전체 .두번째 .자식.자식3 {}
+
+.전체 .두번째 .자식.자식4 {
+    margin-right: 0;
+}
